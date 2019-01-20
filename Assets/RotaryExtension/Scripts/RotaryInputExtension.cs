@@ -9,12 +9,12 @@ namespace RotaryInput
         CounterClockwise
     }
 
-    class RotaryInputExtension
+    public class RotaryInputExtension
     {
         [DllImport("rotaryinput")]
         private static extern int getRotaryDirection();
 
-        public static RotaryDirection GetBezelInput()
+        public static RotaryDirection GetBezelDirection()
         {
             return (RotaryDirection)getRotaryDirection();
         }

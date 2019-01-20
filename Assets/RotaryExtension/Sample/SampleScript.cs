@@ -9,11 +9,11 @@ public class SampleScript : MonoBehaviour
     private void Awake()
     {
         Debug.Log("Awake");
-        Debug.Log(RotaryInputExtension.GetBezelInput().ToString());
+        Debug.Log(RotaryInputExtension.GetBezelDirection().ToString());
     }
 
     private void Update()
     {
-        TextRotaryDirection.text = RotaryInputExtension.GetBezelInput().ToString();
+        TextRotaryDirection.text = RotaryInputExtension.GetBezelDirection().ToString();
     }
 }
